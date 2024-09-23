@@ -1,40 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     
     <!-- tailwind css  -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
+
+      <style>
+        .lexend-font{
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
         }
-      </script>
+      </style>
 
 </head>
-<body>
-    <header>
-        <nav >
-            <button class="btn">Blog</button>
+    <body class="lexend-font">
+        <header>
+            <nav class="max-w-screen-xl mx-auto pt-4">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <button class="btn btn-primary">Blog</button>
+                    </div>
+                    <div class="navbar-center gap-4 justify-center items-center">
+                      <img class="w-8" src="assets/logo.png" alt="">
+                      <h1 class="hidden md:flex">Donate Bangladesh</h1>
+                    </div>
+                    <div class="navbar-end gap-2 ">
+                      <img src="assets/coin.png" alt="">
+                      <span><span id="balance">5500</span> BDT</span>
+                     
+                    </div>
+                  </div>
+            </nav>
 
-        </nav>
+            <div class="flex justify-center items-center mt-5 gap-4">
+                <button class="btn bg-lime-300">Donation</button>
+                <button class="btn bg-white border text-gray-400 py-3">History</button>
+            </div>
 
-      
+            <!-- card section start here  -->
+            <div class="flex lg:flex-row flex-col gap-8 justify-center items-center mt-14  p-4">
+                <div>
+                    <img src="assets/noakhali.png" alt="">
+                </div>
+                <div class="">
+                    <button class="btn"><img src="assets/coin.png" alt=""><span>0</span><span>BDT</span> </button>
+                    <h1 class="text-bold text-xl mt-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="text-base font-light text-gray mt-6"> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution,<br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-6 " />
+                    <button class="btn btn-block bg-lime-400 mt-6">block</button>
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col gap-8 justify-center items-center mt-16 p-4">
+                <div>
+                    <img src="assets/noakhali.png" alt="">
+                </div>
+                <div class="">
+                    <button class="btn"><img src="assets/coin.png" alt=""><span>0</span><span>BDT</span> </button>
+                    <h1 class="text-bold text-xl mt-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="text-base font-light text-gray mt-6"> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution,<br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-6 " />
+                    <button class="btn btn-block bg-lime-400 mt-6">block</button>
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col gap-8 justify-center items-center mt-16 p-4">
+                <div>
+                    <img src="assets/noakhali.png" alt="">
+                </div>
+                <div class="">
+                    <button class="btn"><img src="assets/coin.png" alt=""><span>0</span><span>BDT</span> </button>
+                    <h1 class="text-bold text-xl mt-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="text-base font-light text-gray mt-6"> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution,<br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-6 " />
+                    <button class="btn btn-block bg-lime-400 mt-6">block</button>
+                </div>
+            </div>
+            <div>
 
-      
-    </header>
-    <main>
+            </div>
+        </header>
 
-    </main>
-    
-</body>
+    </body>
+
 </html>
