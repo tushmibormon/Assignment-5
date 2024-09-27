@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+    <!-- tailwind css  -->
+
+      <style>
+        .lexend-font{
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+      </style>
+</head>
+<body>
+    <nav class="max-w-screen-xl mx-auto pt-4">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <button id="btn-home" class="btn btn-primary">Home</button>
+            </div>
+            <div class="navbar-center gap-4 justify-center items-center">
+              <img class="w-8" src="assets/logo.png" alt="">
+              <h1 class="hidden md:flex">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end gap-2 ">
+              <img src="assets/coin.png" alt="">
+              <span><span id="balance">5500</span> BDT</span>
+             
+            </div>
+          </div>
+    </nav>
+
+    <script src="js/history.js"></script>
+</body>
+</html>
